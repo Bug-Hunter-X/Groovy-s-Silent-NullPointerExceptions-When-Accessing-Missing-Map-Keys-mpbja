@@ -1,0 +1,3 @@
+This repository demonstrates a common but subtle issue in Groovy when dealing with maps.  Accessing a non-existent key in a Groovy map returns `null` without throwing an exception. This silent failure can be a source of difficult-to-debug NullPointerExceptions further down the code.
+
+The `bug.groovy` file shows the problem: a simple method attempts to access a map key that may not be present.  The `bugSolution.groovy` file demonstrates several approaches to safely handle the potential absence of the key, preventing unexpected null values.
